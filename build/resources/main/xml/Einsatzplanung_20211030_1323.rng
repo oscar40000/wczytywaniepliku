@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="http://tempuri.org/EinsatzplanungDataSet.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <start>
+        <element name="diffgr:diffgram">
+            <element name="EinsatzplanungDataSet">
+                <oneOrMore>
+                    <element name="Personal">
+                        <attribute name="diffgr:id">
+                            <data type="NCName"/>
+                        </attribute>
+                        <attribute name="msdata:rowOrder">
+                            <data type="integer"/>
+                        </attribute>
+                        <ref name="PKNR"/>
+                        <element name="Nachname">
+                            <text/>
+                        </element>
+                        <optional>
+                            <element name="Vorname">
+                                <text/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <ref name="Ort"/>
+                        </optional>
+                        <ref name="Fahrer"/>
+                        <element name="SortOrder">
+                            <data type="integer"/>
+                        </element>
+                        <element name="IL">
+                            <data type="boolean"/>
+                        </element>
+                        <optional>
+                            <element name="PNR">
+                                <data type="integer"/>
+                            </element>
+                        </optional>
+                        <ref name="IstGruppe"/>
+                        <element name="IstManuellerDatensatz">
+                            <data type="boolean"/>
+                        </element>
+                        <element name="StdPlanMaAnz">
+                            <data type="integer"/>
+                        </element>
+                        <optional>
+                            <element name="TelefonNr">
+                                <text/>
+                            </element>
+                        </optional>
+                        <element name="GL">
+                            <data type="boolean"/>
+                        </element>
+                        <optional>
+                            <element name="EMail">
+                                <text/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <ref name="EDAT"/>
+                        </optional>
+                        <element name="Verfügbarkeit">
+                            <data type="boolean"/>
+                        </element>
+                        <ref name="PersonalpoolBezeichnung"/>
+                        <element name="VorplanungGruppe">
+                            <data type="integer"/>
+                        </element>
+                        <ref name="Gelöscht"/>
+                        <element name="AnzahlEingeplant">
+                            <data type="integer"/>
+                        </element>
+                        <optional>
+                            <element name="Planbar">
+                                <data type="NCName"/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <element name="ZuGruppePKNR">
+                                <data type="integer"/>
+                            </element>
+                            <element name="FirmaText">
+                                <data type="NCName"/>
+                            </element>
+                        </optional>
+                        <element name="FirmaKuerzel">
+                            <data type="NCName"/>
+                        </element>
+                        <element name="Staatsangehörigkeit">
+                            <data type="NCName"/>
+                        </element>
+                        <optional>
+                            <element name="AzFzVerguetetAktMonat">
+                                <data type="decimal"/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <ref name="Performance"/>
+                        </optional>
+                        <optional>
+                            <element name="IBAN">
+                                <data type="NCName"/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <element name="BIC">
+                                <data type="NCName"/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <element name="SteuerID">
+                                <data type="integer"/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <element name="Familienstand">
+                                <data type="NCName"/>
+                            </element>
+                        </optional>
+                    </element>
+                </oneOrMore>
+                <oneOrMore>
+                    <element name="Termine">
+                        <attribute name="diffgr:id">
+                            <data type="NCName"/>
+                        </attribute>
+                        <attribute name="msdata:rowOrder">
+                            <data type="integer"/>
+                        </attribute>
+                        <ref name="TerminNr"/>
+                        <element name="Firma">
+                            <text/>
+                        </element>
+                        <element name="Kunde">
+                            <text/>
+                        </element>
+                        <ref name="Ort"/>
+                        <element name="PLZ">
+                            <data type="integer"/>
+                        </element>
+                        <element name="Strasse">
+                            <text/>
+                        </element>
+                        <element name="Datum">
+                            <data type="dateTime"/>
+                        </element>
+                        <element name="Woche">
+                            <data type="integer"/>
+                        </element>
+                        <element name="Beginn_x0020_Inventur">
+                            <data type="dateTime"/>
+                        </element>
+                        <optional>
+                            <ref name="Bemerkung"/>
+                        </optional>
+                        <element name="Inventurleiter">
+                            <text/>
+                        </element>
+                        <element name="Personalbedarf">
+                            <data type="integer"/>
+                        </element>
+                        <ref name="Gelöscht"/>
+                        <optional>
+                            <element name="SumPlanSoll">
+                                <data type="integer"/>
+                            </element>
+                            <element name="SumPlanIst">
+                                <data type="integer"/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <element name="FilialNr">
+                                <data type="integer"/>
+                            </element>
+                        </optional>
+                        <element name="ObjektId">
+                            <data type="integer"/>
+                        </element>
+                        <element name="TeamleiterBedarf">
+                            <data type="integer"/>
+                        </element>
+                        <optional>
+                            <element name="SumTlIst">
+                                <data type="integer"/>
+                            </element>
+                            <element name="SumTlSoll">
+                                <data type="integer"/>
+                            </element>
+                        </optional>
+                        <element name="DlArt">
+                            <text/>
+                        </element>
+                        <optional>
+                            <element name="TelefonFiliale">
+                                <text/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <element name="Schicht">
+                                <data type="NCName"/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <element name="Technik">
+                                <text/>
+                            </element>
+                        </optional>
+                        <element name="Kombi">
+                            <data type="boolean"/>
+                        </element>
+                        <optional>
+                            <element name="Infotext">
+                                <optional>
+                                    <attribute>
+                                        <name ns="http://www.w3.org/XML/1998/namespace">space</name>
+                                        <data type="NCName"/>
+                                    </attribute>
+                                </optional>
+                                <text/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <element name="Abrechnungsmodus">
+                                <text/>
+                            </element>
+                        </optional>
+                        <element name="BedarfBestaetigt">
+                            <data type="boolean"/>
+                        </element>
+                        <element name="Region">
+                            <data type="NCName"/>
+                        </element>
+                        <optional>
+                            <element name="AnzeigeFormat">
+                                <data type="NCName"/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <element name="BestandAllgemeineInfo">
+                                <text/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <choice>
+                                <element name="BestandGroesseQm">
+                                    <data type="integer"/>
+                                </element>
+                                <element name="BestandStueck_Kd">
+                                    <data type="integer"/>
+                                </element>
+                            </choice>
+                        </optional>
+                        <optional>
+                            <element name="BestandEurVk_ZmVf">
+                                <data type="decimal"/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <element name="BestandEurVk_ZmLag">
+                                <data type="decimal"/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <element name="BestandEurVk_Kd">
+                                <data type="decimal"/>
+                            </element>
+                        </optional>
+                        <element name="BestandStueckSum">
+                            <data type="integer"/>
+                        </element>
+                        <element name="BestandEurVkSum">
+                            <data type="decimal"/>
+                        </element>
+                        <element name="BestandEurEkSum">
+                            <data type="decimal"/>
+                        </element>
+                        <optional>
+                            <element name="AnzahlLeitstände">
+                                <data type="integer"/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <choice>
+                                <element name="InfoLetzteInventur">
+                                    <text/>
+                                </element>
+                                <element name="ParentTerminNr">
+                                    <data type="integer"/>
+                                </element>
+                            </choice>
+                        </optional>
+                        <element name="KundenNr">
+                            <data type="integer"/>
+                        </element>
+                        <element name="KundenPLZ">
+                            <data type="NMTOKEN"/>
+                        </element>
+                        <element name="KundenOrt">
+                            <text/>
+                        </element>
+                        <element name="KundeAdresse1">
+                            <text/>
+                        </element>
+                        <optional>
+                            <element name="KundeTelefon">
+                                <text/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <element name="RueckmeldungAm">
+                                <data type="dateTime"/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <element name="Tour">
+                                <data type="NCName"/>
+                            </element>
+                        </optional>
+                        <element name="ZiaExport">
+                            <data type="boolean"/>
+                        </element>
+                    </element>
+                </oneOrMore>
+                <oneOrMore>
+                    <element name="Personalplanung">
+                        <attribute name="diffgr:id">
+                            <data type="NCName"/>
+                        </attribute>
+                        <attribute name="msdata:rowOrder">
+                            <data type="integer"/>
+                        </attribute>
+                        <ref name="TerminNr"/>
+                        <element name="NameVoll">
+                            <text/>
+                        </element>
+                        <ref name="Fahrer"/>
+                        <ref name="Bemerkung"/>
+                        <ref name="PKNR"/>
+                        <element name="Teamleiter">
+                            <data type="boolean"/>
+                        </element>
+                        <element name="PlanMaAnz">
+                            <data type="integer"/>
+                        </element>
+                        <ref name="IstGruppe"/>
+                        <element name="IstMaAnz">
+                            <data type="integer"/>
+                        </element>
+                        <element name="geplant_fuer_PKNR">
+                            <data type="integer"/>
+                        </element>
+                        <element name="FuerNameVoll">
+                            <text/>
+                        </element>
+                        <element name="FuerIstGruppe">
+                            <data type="boolean"/>
+                        </element>
+                        <element name="Fahrer_PKNR">
+                            <data type="integer"/>
+                        </element>
+                        <element name="FahrerNameVoll">
+                            <text/>
+                        </element>
+                        <element name="IstTlAnz">
+                            <data type="integer"/>
+                        </element>
+                        <element name="PlanTlAnz">
+                            <data type="integer"/>
+                        </element>
+                        <optional>
+                            <ref name="EDAT"/>
+                        </optional>
+                        <ref name="PersonalpoolBezeichnung"/>
+                        <element name="Übernachtung">
+                            <text/>
+                        </element>
+                        <element name="Storno">
+                            <text/>
+                        </element>
+                        <element name="Pruefung">
+                            <text/>
+                        </element>
+                        <optional>
+                            <ref name="Performance"/>
+                        </optional>
+                        <element name="ChangedUser">
+                            <text/>
+                        </element>
+                        <element name="ChangedTime">
+                            <data type="dateTime"/>
+                        </element>
+                        <element name="Beginn">
+                            <data type="dateTime"/>
+                        </element>
+                    </element>
+                </oneOrMore>
+            </element>
+        </element>
+    </start>
+    <define name="PKNR">
+        <element name="PKNR">
+            <data type="integer"/>
+        </element>
+    </define>
+    <define name="Ort">
+        <element name="Ort">
+            <text/>
+        </element>
+    </define>
+    <define name="Fahrer">
+        <element name="Fahrer">
+            <data type="boolean"/>
+        </element>
+    </define>
+    <define name="IstGruppe">
+        <element name="IstGruppe">
+            <data type="boolean"/>
+        </element>
+    </define>
+    <define name="EDAT">
+        <element name="EDAT">
+            <data type="dateTime"/>
+        </element>
+    </define>
+    <define name="PersonalpoolBezeichnung">
+        <element name="PersonalpoolBezeichnung">
+            <data type="NCName"/>
+        </element>
+    </define>
+    <define name="Gelöscht">
+        <element name="Gelöscht">
+            <data type="boolean"/>
+        </element>
+    </define>
+    <define name="Performance">
+        <element name="Performance">
+            <text/>
+        </element>
+    </define>
+    <define name="TerminNr">
+        <element name="TerminNr">
+            <data type="integer"/>
+        </element>
+    </define>
+    <define name="Bemerkung">
+        <element name="Bemerkung">
+            <text/>
+        </element>
+    </define>
+</grammar>

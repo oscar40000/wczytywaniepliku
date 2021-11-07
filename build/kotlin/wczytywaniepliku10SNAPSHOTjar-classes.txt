@@ -1,0 +1,1 @@
+C:\Users\Oskar\IdeaProjects\wczytywaniepliku\build\classes\kotlin\main\FilerepositoryKt.class;C:\Users\Oskar\IdeaProjects\wczytywaniepliku\build\classes\kotlin\main\MainKt.class;C:\Users\Oskar\IdeaProjects\wczytywaniepliku\build\classes\kotlin\main\Strefa.class
